@@ -12,21 +12,21 @@ function updateObjectWithKeyAndValue(recipes, key, value)
 
 function destructivelyUpdateObjectWithKeyAndValue(recipes, key, value)
 {
- object[key]=value
+ recipes[key]=value
  
- return object;
+ return recipes;
 }
 
-function deleteFromObjectByKey(object, key)
+function deleteFromObjectByKey(recipes, key)
 {
-  delete object.key
-  return object
+  delete recipes.key
+  return recipes
 }
 
-function destructivelyDeleteFromObjectByKey(object, key)
+function destructivelyDeleteFromObjectByKey(recipes, key)
 {
-  delete object[key]
+  delete recipes[key]
  
- return object;
+ return recipes;
   
 }
